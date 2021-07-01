@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 41</title>
+</head>
+<body>
+    <p>Pilih Warna Background</p>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="red">Merah</option>
+        <option value="blue">Biru</option>
+        <option value="yellow">Kuning</option>
+        <option value="white" selected>Putih</option>
+    </select>
+
+    <p>Saat Kamu Memilih Warna , Background Akan Berubah</p>
+
+    <script>
+        function myFunction() {
+            let pilihan = document.getElementById('mySelect').value;
+            document.body.style.backgroundColor = pilihan;
+        }
+    </script>
+</body>
+</html>
